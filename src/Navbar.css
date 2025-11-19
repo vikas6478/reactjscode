@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+     background-color: #282c34;
+    gap: 25px;
+    list-style: none;
+  
+}
+li{
+  color: white;
+  text-decoration: none;
+}
