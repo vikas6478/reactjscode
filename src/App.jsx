@@ -1,6 +1,7 @@
-import BackPicture from "./BackPicture"
+import  { BackPicture,BackPicture2 } from "./BackPicture"
 import Navbar from "./Navbar"
 import "./App.css"
+// import Footer from "./Footer"
 
 const App = () =>{
   return(
@@ -8,6 +9,8 @@ const App = () =>{
     <div>
     <Navbar/>
     <BackPicture/>
+    <BackPicture2/>
+    {/* <Footer/> */}
     </div>
     </>
   )
