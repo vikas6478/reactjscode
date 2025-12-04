@@ -12,8 +12,8 @@ const HookCN = () => {
   return (
     <>
     <div style={{backgroundColor:color, width:"200px", height:"200px", border: "2px solid black",padding:"auto"}}>{color}</div> <br />
-    
-    enter color : <input type="text"  onChange={handleColor} style={{border:"2px solid black"}}/> <div>{color.length}</div>
+
+    enter color : <input type="text"  onChange={handleColor} style={{border:"2px solid black"}}/> {color.length}
     </>
   )
 }
