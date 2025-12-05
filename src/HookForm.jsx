@@ -6,21 +6,36 @@ const HookForm = () => {
     // let [city,setCity] = useState("")
     let [form,setForm] = useState({
         name:"",
-        city:""
+        city:"",
+        number:""
     })
 
     let handleChange=(e)=>{
 
         setForm({...form,
-            [e.target.value]: e.target.value
+            [e.target.name]: e.target.value 
         })
     }
     
     let handleSubmit = (e) =>{
         e.preventDefault()
-        // alert(name)
+        // alert(form.name)
         // console.log(name)
         // console.log(city)
+
+        if(form.name.trim()==""){
+            alert("name empty")
+        }
+        else if(form.city.trim()==""){
+            alert("city empty")
+        }
+        else if(form.number.trim()==""){
+            alert("number empty")
+        }
+        else if(form.number.trim().length !== 10){
+            alert("number must be 10 digits")
+    }
+        
     }
 
   return (
@@ -34,8 +49,10 @@ const HookForm = () => {
         {/* enter name : <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} /> <br /><br />
         enter city : <input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}} /> */}
 
-        enter name : <input type="text" value={form.name} name='name' onChange={handleChange} /> <br /><br />
-        enter city : <input type="text" value={form.city} name='city' onChange={handleChange} />
+        enter name : <input type="text" value={form.name} name='name' onChange={handleChange} /> <br />
+        enter city : <input type="text" value={form.city} name='city' onChange={handleChange} /> <br />
+        enter number : <input type="tell" value={form.number} name='number' onChange={handleChange} /> <br />
+        {/* enter city : <input type="text" value={form.city} name='city' onChange={handleChange} /> <br /> */}
 
         <button type='submit'>submit</button>
     </form>
