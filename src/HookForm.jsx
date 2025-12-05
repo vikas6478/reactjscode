@@ -35,6 +35,8 @@ const HookForm = () => {
         else if(form.number.trim().length !== 10){
             alert("number must be 10 digits")
     }
+
+    console.log(form)
         
     }
 
@@ -51,7 +53,7 @@ const HookForm = () => {
 
         enter name : <input type="text" value={form.name} name='name' onChange={handleChange} /> <br />
         enter city : <input type="text" value={form.city} name='city' onChange={handleChange} /> <br />
-        enter number : <input type="tell" value={form.number} name='number' onChange={handleChange} /> <br />
+        enter number : <input type="number" value={form.number} name='number' onChange={handleChange} /> <br />
         {/* enter city : <input type="text" value={form.city} name='city' onChange={handleChange} /> <br /> */}
 
         <button type='submit'>submit</button>
