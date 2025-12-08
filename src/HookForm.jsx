@@ -23,18 +23,36 @@ const HookForm = () => {
         // console.log(name)
         // console.log(city)
 
+        let valid=true
+
         if(form.name.trim()==""){
             alert("name empty")
+            valid=false
+
         }
         else if(form.city.trim()==""){
             alert("city empty")
+            valid=false
         }
         else if(form.number.trim()==""){
             alert("number empty")
+            valid=false
         }
         else if(form.number.trim().length !== 10){
             alert("number must be 10 digits")
+            valid=false
+    } 
+    else if(valid){
+
+        localStorage.setItem("name",form.name)
+        localStorage.setItem("city",form.city)
+        localStorage.setItem("number",form.number)
+
+        alert("submitted!!")
+        
     }
+
+
 
     console.log(form)
         
@@ -42,11 +60,11 @@ const HookForm = () => {
 
   return (
     <>
-    <h1>
-        form heading
+    <h1 className='text-center '>
+        FROM HEADING
     </h1>
 
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='text-center bg-black text-amber-50 w-50 justify-between m-auto'>
 
         {/* enter name : <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} /> <br /><br />
         enter city : <input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}} /> */}
@@ -54,7 +72,6 @@ const HookForm = () => {
         enter name : <input type="text" value={form.name} name='name' onChange={handleChange} /> <br />
         enter city : <input type="text" value={form.city} name='city' onChange={handleChange} /> <br />
         enter number : <input type="number" value={form.number} name='number' onChange={handleChange} /> <br />
-        {/* enter city : <input type="text" value={form.city} name='city' onChange={handleChange} /> <br /> */}
 
         <button type='submit'>submit</button>
     </form>
