@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const HookLogin = () => {
+
+  let nav = useNavigate()
 
    let [form,setForm] = useState({
           name:"",
@@ -8,8 +12,13 @@ const HookLogin = () => {
       })
 
       let handleChange = (e) =>{
+
+        let name=e.target.name
+        let value=e.target.value
+        
         setForm({...form,
-            [e.target.name]: e.target.value 
+            // [e.target.name]: e.target.value  
+            [name]:value 
         })
       }
 
@@ -22,11 +31,11 @@ const HookLogin = () => {
         if(form.name !== Name){
           alert("name is wrong")
         }
-        else if(form.number!== Number){
+        else if(form.number !== Number){
           alert("password is wrong")
         }
         else{
-          alert("submitted")
+          nav("/form")
         }
        
       }
