@@ -47,7 +47,7 @@ const HookLogin = () => {
         login page
     </h1>
     
-    <form onSubmit={handleSubmit} className='text-center bg-black text-amber-50 w-50 justify-between m-auto'>
+    <form onSubmit={handleSubmit} className='text-center bg-black text-amber-50 w-50 justify-between m-auto rounded-3xl'>
 
         enter name : <input type="text" value={form.name} name='name' onChange={handleChange} /> <br />
         enter number : <input type="number" value={form.number} name='number' onChange={handleChange} /> <br />

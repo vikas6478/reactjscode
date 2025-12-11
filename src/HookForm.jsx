@@ -64,7 +64,7 @@ const HookForm = () => {
         FROM HEADING
     </h1>
 
-    <form onSubmit={handleSubmit} className='text-center bg-black text-amber-50 w-50 justify-between m-auto'>
+    <form onSubmit={handleSubmit} className='text-center bg-black text-amber-50 w-50 justify-between m-auto rounded-3xl'>
 
         {/* enter name : <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} /> <br /><br />
         enter city : <input type="text" value={city} onChange={(e)=>{setCity(e.target.value)}} /> */}
