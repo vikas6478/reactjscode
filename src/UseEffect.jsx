@@ -11,6 +11,7 @@ const UseEffect = () => {
         console.log("runingg")
     },[])
     
+
   return (
    <>
    UseEffect : <button onClick={inc}>increment</button>

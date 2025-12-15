@@ -1,23 +1,20 @@
 {
-    "movie":[
-        {
-            "name":"vikas",
-            "city":"bhopal",
-            "date":"23-12-2025",
-            "people":2,
-            "price":200
-        },{
-            "name":"kunnu",
-            "city":"bhopal",
-            "date":"24-12-2025",
-            "people":3,
-            "price":660  
-        },{
-            "name":"abhi",
-            "city":"bhopal",
-            "date":"22-12-2025",
-            "people":1,
-            "price":220  
-        }
-    ]
+  "movie": [
+    {
+      "name": "vikas",
+      "city": "bhopal",
+      "date": "23-12-2025",
+      "people": 2,
+      "price": 200,
+      "id": "e8d8"
+    },
+    {
+      "name": "kunnu",
+      "city": "bhopal",
+      "date": "24-12-2025",
+      "people": 3,
+      "price": 660,
+      "id": "f8a1"
+    }
+  ]
 }
