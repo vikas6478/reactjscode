@@ -1,20 +1,47 @@
 {
   "movie": [
     {
+      "id": "6403",
       "name": "vikas",
-      "city": "bhopal",
-      "date": "23-12-2025",
-      "people": 2,
-      "price": 200,
-      "id": "e8d8"
+      "city": "Bhopal M.P",
+      "date": "2025-12-19",
+      "people": "1",
+      "price": "",
+      "person": 220
     },
     {
-      "name": "kunnu",
+      "id": "463e",
+      "name": "vikas",
+      "city": "Bhopal M.P",
+      "date": "2025-12-19",
+      "people": "1",
+      "price": "",
+      "person": 220
+    },
+    {
+      "id": "d492",
+      "name": "vikas",
       "city": "bhopal",
-      "date": "24-12-2025",
-      "people": 3,
-      "price": 660,
-      "id": "f8a1"
+      "date": "2025-12-23",
+      "people": "2",
+      "price": "",
+      "person": 220
+    },
+    {
+      "name": "vikas",
+      "city": "bhopal",
+      "date": "2025-12-23",
+      "people": "3",
+      "person": 250,
+      "id": "7c9e"
+    },
+    {
+      "name": "vikass",
+      "city": "Bhopal M.P",
+      "date": "2025-12-19",
+      "people": "1",
+      "person": 250,
+      "id": "8958"
     }
   ]
 }
