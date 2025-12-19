@@ -13,6 +13,7 @@ const DataShow = () => {
    
   let [Data,setData] = useState([])
   let [editId,setEditId] = useState(null)
+  let [search,setSearch] = useState("")
 
   const Table = () =>{
 
@@ -75,10 +76,18 @@ const DataShow = () => {
     setForm({ name:e.name, city:e.city, date:e.date, people:e.people})
   }
 
+  let FilterData = Data.filter((e)=>{
+    
+    return (e.name.toLowerCase().includes(search.toLocaleLowerCase())
+            || e.city.toLowerCase().includes(search.toLocaleLowerCase()))
+  })
+
 
   return (
     <>
       <h1>data show</h1>
+
+      Search : <input type='text' value={search} onChange={(e)=>{setSearch(e.target.value)}}/>
 
       <table border={2} cellPadding={2}>
         <thead>
@@ -93,7 +102,7 @@ const DataShow = () => {
           </tr>
         </thead>
         <tbody>
-          {Data.map((e)=>(
+          {FilterData.map((e)=>(
             <tr>
 
             <td>{e.name}</td>
